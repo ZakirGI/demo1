@@ -19,7 +19,8 @@ public class UserController {
 	}
 	@DeleteMapping("/user")
 	void deleteUser() {
-		// TODO 
+		// Commnet Added
+		
 	}
  
 }
