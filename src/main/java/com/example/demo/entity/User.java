@@ -10,6 +10,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
+	private Integer age;
 	private String name;
 
 	public Integer getId() {
@@ -20,7 +21,6 @@ public class User {
 		this.id = id;
 	}
 
-
 	public String getName() {
 		return name;
 	}
@@ -28,4 +28,11 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-}
+	
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+}  
