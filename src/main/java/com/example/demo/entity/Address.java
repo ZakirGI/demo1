@@ -13,6 +13,7 @@ public class Address {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	Integer id;
 	String house;
+	String street;
 	@OneToOne(mappedBy = "address")
 	public String getHouse() {
 		return house;
@@ -26,6 +27,6 @@ public class Address {
 	public void setStreet(String street) {
 		this.street = street;
 	}
-	String street;
+	
 
 }

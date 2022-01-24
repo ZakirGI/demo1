@@ -23,6 +23,18 @@ public class User {
 	@OneToOne (cascade = CascadeType.ALL)
 	@JoinColumn(name = "address_id", referencedColumnName = "id")
 	Address address;
+	
+	@OneToOne (cascade = CascadeType.ALL)
+	@JoinColumn(name = "company_id", referencedColumnName = "id")
+	Company company;
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
 
 	public Address getAddress() {
 		return address;
