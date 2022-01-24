@@ -1,6 +1,8 @@
 package com.example.demo.service;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,7 @@ import com.example.demo.entity.User;
 public class IUserService {
 	@Autowired 
 	UserRepository userRepository;
+	@Transactional
 	public void saveUser(User user) {
 		userRepository.save(user);
 	}
